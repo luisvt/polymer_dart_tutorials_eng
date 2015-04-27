@@ -1,0 +1,38 @@
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<polymer-element name="my-badge">
+  <template>
+    <style>
+      :host {
+        display: block;
+        border: 2px solid {{color}};
+        border-radius: 1em;
+        background: {{color}};
+        font-size: 20pt;
+        width: 12em;
+        height: 7em;
+        text-align: center;
+      }
+      .header {
+        color: white;
+        font-family: sans-serif;
+        padding: 0.5em;
+      }
+      .content {
+        color: black;
+        background: white;
+        font-family: "Marker Felt", cursive;
+        font-size: 45pt;
+        padding-top: 0.2em;
+      }
+    </style>
+    <div class="header">
+      Hi! My name is
+    </div>
+    <div class="content">
+      <content></content>
+    </div>
+  </template>
+  <script type="application/dart" src="my_badge.dart"></script>
+</polymer-element>
